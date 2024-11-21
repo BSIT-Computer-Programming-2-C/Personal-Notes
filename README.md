@@ -74,7 +74,6 @@ class Weapon
 
 {
     public string Jump { get; set; }
-    
     public int ExcellentDamage { get; set; }
 }
 
