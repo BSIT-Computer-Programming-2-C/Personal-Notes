@@ -1,5 +1,4 @@
 # Personal-Notes
-I make it shorter to understand
 
 Encapsulation: Protects object data and controls access.
 
