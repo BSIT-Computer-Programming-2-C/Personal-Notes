@@ -31,9 +31,7 @@ string num7 = "HelloWorld";  // Sequence of characters
 struct Point
 
 {
-
-    public int X, Y;
-    
+    public int X, Y; 
 }
 
 Point p = new Point { X = 1, Y = 1 };
@@ -47,34 +45,26 @@ int[] digits = { 1, 2, 3, 4 };
 class Knight
 
 {
-
     public int Position {get; set;}
-    
     public string Color { get; set; }
-    
     public string GetColor() => Color;
-    
     public void Move()
-    
 }
+
 
 > Abstraction
 
 abstract class Car
 
 {
-
     public abstract void Start();
-    
 }
 
 
 class Vroom : Car
 
 { 
-
     public override Start() => Console.WriteLine("Vroom Vroom Vroom Engine started");
-    
 }
 
 
@@ -83,19 +73,15 @@ class Vroom : Car
 class Weapon
 
 {
-
     public string Jump { get; set; }
     
     public int ExcellentDamage { get; set; }
-    
 }
 
 class Shield : Weapon
 
 { 
-
-    public Shield(string Jump, int ExcellentDamge) : base (Jump, ExcellentDamage) {}
-    
+    public Shield(string Jump, int ExcellentDamge) : base (Jump, ExcellentDamage) {}  
 }
 
 
@@ -104,17 +90,13 @@ class Shield : Weapon
 class Man
 
 {
-
     public virtual void Run(int meters) => Console.WriteLine($"Running {meters} meters.");
-    
 }
 
 class Nike : Man
 
 {
-
     public override void Run(int meters) => Console.WriteLine($"Running {meters} meters with jumping!");
-
 }
 
 > Access Modifiers
