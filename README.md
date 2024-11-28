@@ -28,28 +28,95 @@ string num7 = "HelloWorld";  // Sequence of characters
 
 > Structures (Value Types)
 
-struct Point
+using System;
 
+struct Point
 {
-    public int X, Y; 
+    public int X, Y;
 }
+
+class Program
+{
+    static void Main(string[] args)
+    
+{
+    
+// Initialize the Point struct
 
 Point p = new Point { X = 1, Y = 1 };
 
+// Output the values of X and Y
+
+Console.WriteLine($"Point coordinates: X = {p.X}, Y = {p.Y}");
+
+}
+
+}
+
+![Screenshot 2024-11-28 211812](https://github.com/user-attachments/assets/fdf3b3e0-f71c-4935-8879-91e7856c8643)
+
+
 > Arrays
 
-int[] digits = { 1, 2, 3, 4 };
-
-> Classes & Encapsulation
+using System;
 
 class Knight
 
 {
-    public int Position {get; set;}
-    public string Color { get; set; }
-    public string GetColor() => Color;
-    public void Move()
+
+// Properties with automatic getters and setters (encapsulation)
+
+public int Position { get; set; }
+
+public string Color { get; set; }
+
+// Method to get the color of the knight
+
+public string GetColor() => Color;
+
+// Method to move the knight (for now it will just print a message)
+
+public void Move()
+{
+Console.WriteLine("The knight is moving.");
 }
+}
+
+class Program
+
+{
+
+static void Main(string[] args)
+
+{
+
+// Create an instance of the Knight class
+
+Knight knight = new Knight
+
+{
+
+Position = 1, // Initial position
+
+Color = "White" // Knight color
+
+};
+
+// Display knight's color and position
+
+Console.WriteLine($"Knight Color: {knight.GetColor()}");
+
+Console.WriteLine($"Knight Position: {knight.Position}");
+
+// Move the knight
+
+knight.Move();
+
+}
+
+}
+
+![Screenshot 2024-11-28 212157](https://github.com/user-attachments/assets/ca0a0451-f594-47c3-ae1c-619ed8199622)
 
 
 > Abstraction
