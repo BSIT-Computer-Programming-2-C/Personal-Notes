@@ -269,16 +269,18 @@ Console.WriteLine(myShield.ToString());
 
 > Polymorphism
 
+using System;
+
 class Man
 
 {
-    public virtual void Run(int meters) => Console.WriteLine($"Running {meters} meters.");
-}
 
-class Nike : Man
+public virtual void Run(int meters)
 
 {
-    public override void Run(int meters) => Console.WriteLine($"Running {meters} meters with jumping!");
+
+Console.WriteLine($"Running {meters} meters.");
+
 }
 
 > Access Modifiers
