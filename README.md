@@ -315,6 +315,37 @@ Console.WriteLine(This is a man wearing Nike shoes.");
 
 }
 
+class Program
+
+{
+
+static void Main()
+
+{
+
+Man genericMan = new Man();
+
+genericMan.Run(100);
+
+genericMan.DisplayDetails();
+
+Nike nikeMan = new Nike();
+
+nikeMan.Run(100);
+
+nikeMan.DisplayDetails();
+
+Man polymorphicMan = new Nike();
+
+polymorphicMan.Run(200);
+
+polymorphicMan.DisplayDetails();
+
+}
+
+}
+
+
 > Access Modifiers
 
 public: Accessible anywhere.
