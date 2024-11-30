@@ -283,6 +283,15 @@ Console.WriteLine($"Running {meters} meters.");
 
 }
 
+public virtual void DisplayDetails()
+
+{
+
+Console.WriteLine("This is a generic man.");
+
+}
+}
+
 > Access Modifiers
 
 public: Accessible anywhere.
