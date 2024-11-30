@@ -305,6 +305,16 @@ Console.WriteLine($"Running {meters} meters with jumping!");
 
 }
 
+public override void DisplayDetails()
+
+{
+
+Console.WriteLine(This is a man wearing Nike shoes.");
+
+}
+
+}
+
 > Access Modifiers
 
 public: Accessible anywhere.
