@@ -244,6 +244,26 @@ return $"Shhield [Jump = {Jump}, ExcellentDamage={EcxellentDamage}, Defence={Def
 
 }
 
+class program
+
+{
+
+static void Main()
+
+{
+
+Shield myShield = new Shield("High Jump", 50, 20);
+
+myShield.Attack();
+
+myShield.Defend();
+
+Console.WriteLine(myShield.ToString());
+
+}
+
+}
+
 > Polymorphism
 
 class Man
