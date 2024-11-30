@@ -264,6 +264,9 @@ Console.WriteLine(myShield.ToString());
 
 }
 
+![Screenshot 2024-11-30 231311](https://github.com/user-attachments/assets/fca2f5e3-b4a4-4ddd-9d19-9804fa371e4e)
+
+
 > Polymorphism
 
 class Man
