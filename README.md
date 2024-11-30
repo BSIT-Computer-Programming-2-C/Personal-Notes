@@ -226,7 +226,23 @@ Console.WriteLine($"Shield attacks with {ExcellentDamage} damage and defends wit
 
 }
 
+public void Defend()
 
+{
+
+Console.WriteLine($"Shield provedes defence of {Defence}!":
+
+}
+
+public override string ToString()
+
+{
+
+return $"Shhield [Jump = {Jump}, ExcellentDamage={EcxellentDamage}, Defence={Defence}";
+
+}
+
+}
 
 > Polymorphism
 
