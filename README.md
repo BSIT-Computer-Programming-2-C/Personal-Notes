@@ -290,6 +290,19 @@ public virtual void DisplayDetails()
 Console.WriteLine("This is a generic man.");
 
 }
+
+}
+
+class Nike : Man
+
+{
+
+public override void Run(int meters)
+
+{
+
+Console.WriteLine($"Running {meters} meters with jumping!");
+
 }
 
 > Access Modifiers
