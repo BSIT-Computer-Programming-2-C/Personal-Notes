@@ -202,6 +202,29 @@ return $"Weapon [Jump = {Jump}, Excellent={ExcellentDamage}]";
 
 }
 
+class Shield : Weapon
+
+{
+
+public int Defence { get; set; }
+
+public Shield (string jump, int excellentDamage, int defence)
+
+:base(jump, excellentDamage)
+
+{
+
+Defence = defence;
+
+}
+
+public override void Attack()
+
+{
+
+Console.WriteLine($"Shield attacks with {ExcellentDamage} damage and defends with {Defence} defence.");
+
+}
 
 
 
