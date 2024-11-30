@@ -143,6 +143,22 @@ Console.WriteLine("Vroom Vroom Vroom Engine Started");
 
 }
 
+class Program
+
+{
+
+static void Main(String[] args)
+
+{
+
+Car myCar = new Vroom();
+
+myCar.Start();
+
+}
+
+}
+
 
 > Inheritance
 
