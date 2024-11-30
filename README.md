@@ -164,18 +164,45 @@ myCar.Start();
 
 > Inheritance
 
-class Weapon
+using System;
+
+abstract class Weapon
 
 {
-    public string Jump { get; set; }
-    public int ExcellentDamage { get; set; }
+
+public string Jump { get; set; }
+
+public int ExcellentDamage { get; set; }
+
+public Weapon(string jump, int excellenDamage)
+
+{
+
+Jump = jump;
+
+ExcellentDamage = excellentDamage;
+
 }
 
-class Shield : Weapon
+public virtual void Attack()
 
-{ 
-    public Shield(string Jump, int ExcellentDamge) : base (Jump, ExcellentDamage) {}  
+{
+
+Console.WriteLine($"Weapon attacks with {ExcellentDamage} damage!");
+
 }
+
+public override string ToString()
+
+{
+
+return $"Weapon [Jump = {Jump}, Excellent={ExcellentDamage}]";
+
+}
+
+}
+
+
 
 
 > Polymorphism
